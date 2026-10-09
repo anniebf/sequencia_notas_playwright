@@ -1,0 +1,22 @@
+[project]
+name = "sequencia-notas-pw"
+version = "0.1.0"
+description = "Automacao da Sequencia de Notas da SEFAZ-MT com Playwright."
+requires-python = ">=3.12"
+dependencies = [
+    "playwright>=1.51,<2",
+    "anticaptchaofficial>=1.0.64,<2",
+    "oracledb>=3,<4",
+    "pandas>=2.2,<3",
+    "xlrd>=2,<3",
+    "openpyxl>=3.1,<4",
+    "python-dotenv>=1,<2",
+    "requests>=2.32,<3",
+]
+
+[project.scripts]
+sequencia-notas = "sequencanotas_pw.main:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

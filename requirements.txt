@@ -1,0 +1,8 @@
+playwright>=1.51,<2
+anticaptchaofficial>=1.0.64,<2
+oracledb>=3,<4
+pandas>=2.2,<3
+xlrd>=2,<3
+openpyxl>=3.1,<4
+python-dotenv>=1,<2
+requests>=2.32,<3

@@ -1,0 +1,16 @@
+.env
+.venv
+__pycache__
+*.py[cod]
+.git
+.gitignore
+data/*
+!data/download/
+!data/csv/
+!data/captcha/
+!data/log/
+!data/download/.gitkeep
+!data/csv/.gitkeep
+!data/captcha/.gitkeep
+!data/log/.gitkeep
+params.json

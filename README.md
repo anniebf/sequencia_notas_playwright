@@ -27,10 +27,9 @@ Coloque os dois arquivos em uma mesma pasta no host e monte essa pasta em
 
 ```powershell
 cd C:\scripts_python\SequenciadeNotas\sequenciaNotasPW
-docker build -f dockerfile -t pw_sequencia_notas .
-docker run --rm `
-  -v "C:\caminho\para\config:/config:ro" `
-  pw_sequencia_notas
+docker build -f dockerfile -t hiannyurt/pw_sequencia_notas:latest .
+docker run --rm  -v "C:\scripts_python\SequenciadeNotas\sequenciaNotasPW\.env:/config/.env:ro" -v "C:\scripts_python\SequenciadeNotas\sequenciaNotasPW\imparqsefaz:/app/imparqsefaz/:rw"  -v "C:\scripts_python\SequenciadeNotas\SequenciaNotas\parametros_contabilista\params.json:/config/params.json:ro" -v "C:\scripts_python\SequenciadeNotas\sequenciaNotasPW\data\log:/app/data/log:rw" hiannyurt/pw_sequencia_notas:latest
+ 
 ```
 
 A pasta `config` deve conter `.env` e `params.json`. O diretório padrão do
